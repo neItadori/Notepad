@@ -34,12 +34,14 @@ namespace Notepad
                 using (var request = new HttpRequestMessage(new HttpMethod("GET"), "https://api.github.com/repos/Cotton-Buds/calculator/releases"))
                 {
                     request.Headers.TryAddWithoutValidation("Accept", "application/vnd.github+json");
-                    request.Headers.TryAddWithoutValidation("Authorization", "Bearer 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");
+                    request.Headers.TryAddWithoutValidation("Authorization", "Bearer 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");
                     request.Headers.TryAddWithoutValidation("X-GitHub-Api-Version", "2022-11-28");
-                    request.Headers.TryAddWithoutValidation("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0");
+                    request.Headers.TryAddWithoutValidation("User-Agent", "Awesome-Octocat-App");
 
                     var response = httpClient.SendAsync(request).Result;
                     var result = response.Content.ReadAsStringAsync().Result;
+
+                    Console.WriteLine(result);
 
                     myDeserializedClass = JsonConvert.DeserializeObject<List<GitClass>>(result);
 

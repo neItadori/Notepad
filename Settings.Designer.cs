@@ -104,7 +104,6 @@
             this.guna2ComboBox1.MaxDropDownItems = 3;
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(110, 30);
-            this.guna2ComboBox1.StartIndex = 0;
             this.guna2ComboBox1.TabIndex = 6;
             this.guna2ComboBox1.TextOffset = new System.Drawing.Point(0, 2);
             // 
@@ -126,7 +125,6 @@
             this.guna2ComboBox2.MaxDropDownItems = 3;
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.Size = new System.Drawing.Size(205, 30);
-            this.guna2ComboBox2.StartIndex = 0;
             this.guna2ComboBox2.TabIndex = 7;
             this.guna2ComboBox2.TextOffset = new System.Drawing.Point(0, 2);
             // 
